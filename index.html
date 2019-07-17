@@ -5,32 +5,32 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='javascript.js'></script>
     
 </head>
 <body>
+<div class="game" >
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/1200px-Avatar_The_Last_Airbender_logo.svg.png" alt="logo" height="250">
 
-    <h1 class="header">Avatar:the Last Airbender Trivia </h1>
-
-    <container class="StartScreen">
+    <div class="StartScreen">
     
+    <p class="rules"> Do you have what it takes to be master of the Avatar universe? See how well you do against the clock. You have 5 seconds to answer each question.</p>    
+
+    <button type="button" class="startgame"> Start Game!</button>
+
+    </div>
+
+    
+    
+    <div class="QuestionDisplay">
+    <div class="timerquestionarea">
+    <p id="timeleft"> Time Left: <p id="display"></p> </p>
 
     <p class="question"></p>
-
-    <button type="button" class="startgame" > Start Game!</button>
-
-    </container>
-
-    
-    
-    <container class="QuestionDisplay">
-    
-    <h2 id="display"></h2>
-
-    <p class="question"></p>
-
+    </div>
     <form class="answers">
 
         <button type="button" class="answerbutton" id="A" data-type="A"> Click Me!</button>
@@ -39,17 +39,17 @@
         <button type="button" class="answerbutton" id="D" data-type="D"> Click Me!</button>
 
     </form>
-    </container>
+</div>
 
-    <container class="QuestionResultDisplay">
+    <div class="QuestionResultDisplay">
 
 
     <p class="result"></p>
     <p class="correctanswer"></p>
 
-    </container>
+    </div>
 
-    <container class="FinalScore">
+    <div class="FinalScore">
             
     <h2 class="finalscoreheader"> Final Score!</h2>
     <p class="finalscorenumber"></p>
@@ -58,9 +58,9 @@
     <p class="totalincorrectanswers"></p>
     <button type="button" class="playagain" > Play Again!</button>
 
-    </container>
+    </div>
 
 
-
+</div>
 </body>
 </html>

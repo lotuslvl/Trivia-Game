@@ -153,8 +153,10 @@ var question6 = {
           count: function() {
 
             if (stopwatch.time<1){
-
+                $(".result").text(" The clock timed out!");
+                scoreforAnswers.push(false);
                 stopwatch.stop();
+                
                 if(questioncounter===(questionlist.length-1)) {
 
                     $(".QuestionDisplay").hide();
